@@ -45,18 +45,26 @@ fig = go.Figure(data=[go.Sankey(
         thickness = 20,
         label = unique_source_target,
         color = color_node
+        textfont=dict(
+            family="sans serif",
+            size=18,
+            color="crimson")
         ),
     
     link = dict(
         source = links_dict["source"],
         target = links_dict["target"],
         value = links_dict["value"],
+        textfont=dict(
+            family="sans serif",
+            size=18,
+            color="crimson")
         #color = color_link
     )
 )]
 )
 
-fig.update_layout(font_size = 15)
+fig.update_layout()
 #fig.show()
 
 st.plotly_chart(fig)
