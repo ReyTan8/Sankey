@@ -6,8 +6,8 @@ import streamlit as st
 
 st.set_page_config(layout="centered")
 
-st.title("Colorectal Appointment Non-Attendances")
-
+st.title("Colorectal Appointments")
+st.subheader("Non-attendances")
 
 df = pd.read_csv('ColorectalAppt.csv')
 
