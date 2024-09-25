@@ -44,23 +44,20 @@ fig = go.Figure(data=[go.Sankey(
         pad = 15,
         thickness = 20,
         label = unique_source_target,
-        color = color_node,
-        textfont=dict(
-            family="sans serif",
-            size=18,
-            color="crimson")
+        color = color_node        
         ),
     
     link = dict(
         source = links_dict["source"],
         target = links_dict["target"],
-        value = links_dict["value"],
-        textfont=dict(
-            family="sans serif",
-            size=18,
-            color="crimson")
+        value = links_dict["value"]
         #color = color_link
-    )
+    ),
+
+    textfont=dict(
+            family="Arial",
+            size=12,
+            color="black")
 )]
 )
 
