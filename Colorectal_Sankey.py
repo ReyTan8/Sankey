@@ -44,7 +44,7 @@ fig = go.Figure(data=[go.Sankey(
         pad = 15,
         thickness = 20,
         label = unique_source_target,
-        color = color_node
+        color = color_node,
         textfont=dict(
             family="sans serif",
             size=18,
