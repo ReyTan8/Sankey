@@ -56,7 +56,7 @@ fig = go.Figure(data=[go.Sankey(
 )]
 )
 
-fig.update_layout(title_text = "Appointment Outcomes", font_size = 10)
+fig.update_layout(font_size = 15)
 #fig.show()
 
 st.plotly_chart(fig)
