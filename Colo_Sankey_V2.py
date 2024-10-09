@@ -83,15 +83,19 @@ def genSankey(df, cat_cols=[], value_cols="",title=""):
           source = sourceTargetDf["sourceID"],
           target = sourceTargetDf["targetID"],
           value = sourceTargetDf["count"]
-        )
+        ),
+        textfont=dict(
+                family="Arial",
+                size=12,
+                color="black")
       )
     
-    layout =  dict(
-        font = dict(
-          size = 14
-        ),
-        paper_bgcolor='rgba(0,0,0,0)',
-        plot_bgcolor='rgba(0,0,0,0)'
+    # layout =  dict(
+    #     font = dict(
+    #       size = 14
+    #     ),
+    #     paper_bgcolor='rgba(0,0,0,0)',
+    #     plot_bgcolor='rgba(0,0,0,0)'
     )
        
     fig = dict(data=[data], layout=layout)
