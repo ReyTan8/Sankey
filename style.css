@@ -10,3 +10,10 @@ html, body, st-emotion-cache [class*="css"] {
 h1, h2, h3, h4, p {
     font-family: "Lexend", sans-serif;
 }
+
+.sankey {
+  .node-label-text-path {
+    text-shadow: none;
+    fill: #fff !important;
+  }
+}
