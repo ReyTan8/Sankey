@@ -4,8 +4,8 @@ import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
 import streamlit as st
-from plotly.offline import iplot, init_notebook_mode
-init_notebook_mode(connected=True)
+# from plotly.offline import iplot, init_notebook_mode
+# init_notebook_mode(connected=True)
 
 st.set_page_config(layout="wide")
 
